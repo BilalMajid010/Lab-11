@@ -13,6 +13,7 @@ class Reg_Form extends JFrame implements ActionListener {
     JCheckBox matric, intermediate, graduate, postgraduate;
     JRadioButton male, female;
     ButtonGroup gen;
+    ImageIcon icon, a;
     JButton save, print, clear;
     JOptionPane msgpanel;
     JsonObject Object1;
@@ -25,6 +26,8 @@ class Reg_Form extends JFrame implements ActionListener {
         setBounds(300, 90, 600, 600);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setForeground(Color.YELLOW);
+        icon = new ImageIcon("1.png");
+        setIconImage(icon.getImage());
         setLayout(new FlowLayout(FlowLayout.CENTER));
         setResizable(false);
 
@@ -247,6 +250,8 @@ class Reg_Form extends JFrame implements ActionListener {
             f2.setBounds(300, 90, 600, 500);
             f2.setDefaultCloseOperation(EXIT_ON_CLOSE);
             f2.setForeground(Color.ORANGE);
+            a = new ImageIcon("2.png");
+            f2.setIconImage(a.getImage());
             f2.setLayout(new FlowLayout(FlowLayout.CENTER));
             f2.setResizable(false);
 
