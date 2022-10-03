@@ -26,8 +26,6 @@ class Reg_Form extends JFrame implements ActionListener {
         setBounds(300, 90, 600, 600);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setForeground(Color.YELLOW);
-        icon = new ImageIcon("1.png");
-        setIconImage(icon.getImage());
         setLayout(new FlowLayout(FlowLayout.CENTER));
         setResizable(false);
 
@@ -184,7 +182,7 @@ class Reg_Form extends JFrame implements ActionListener {
     void save() { // method for when save button is selected
         Writer write;
         try {
-            write = new FileWriter("Task.json");
+            write = new FileWriter("Details_of_studeents.json");
             write.write(Object1.toString());
             write.close();
         } catch (Exception a) {
@@ -250,8 +248,6 @@ class Reg_Form extends JFrame implements ActionListener {
             f2.setBounds(300, 90, 600, 500);
             f2.setDefaultCloseOperation(EXIT_ON_CLOSE);
             f2.setForeground(Color.ORANGE);
-            a = new ImageIcon("2.png");
-            f2.setIconImage(a.getImage());
             f2.setLayout(new FlowLayout(FlowLayout.CENTER));
             f2.setResizable(false);
 
